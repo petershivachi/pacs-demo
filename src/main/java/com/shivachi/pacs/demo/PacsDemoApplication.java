@@ -1,8 +1,10 @@
-package com.shivachi.pacs_demo;
+package com.shivachi.pacs.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.reactive.config.EnableWebFlux;
 
+@EnableWebFlux
 @SpringBootApplication
 public class PacsDemoApplication {
 
