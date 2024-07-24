@@ -19,9 +19,6 @@ public class UserSecurityConfig implements HttpSecurityConfig {
                             .pathMatchers(HttpMethod.PUT, "/api/v1/access-management/users/delete").hasAnyAuthority("DELETE_USER")
                             .pathMatchers(HttpMethod.PUT, "/api/v1/access-management/users/update-password").hasAnyAuthority("UPDATE_USER_PASSWORD")
                             .pathMatchers(HttpMethod.GET, "/api/v1/access-management/users/list").hasAnyAuthority("VIEW_USERS")
-                            .pathMatchers(HttpMethod.GET, "/api/v1/access-management/users/user-template").hasAnyAuthority("DOWNLOAD_USER_TEMPLATE")
-                            .pathMatchers(HttpMethod.POST, "/api/v1/access-management/users/customer_bulk_upload").hasAnyAuthority("USER_BULK_UPLOAD")
-                            .pathMatchers(HttpMethod.POST, "/api/v1/access-management/users/remove/{userCode}").hasAnyAuthority("REMOVE_USER")
                     );
         };
     }
